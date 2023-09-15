@@ -1,0 +1,107 @@
+2023-09-08 12:49:13,113 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-08 13:37:20,348 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-08 13:37:28,247 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-08 14:43:35,300 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-08 14:45:05,101 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-08 14:45:20,409 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-08 14:45:54,516 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-11 09:21:45,018 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-11 10:21:53,027 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-11 12:31:43,610 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-11 14:21:28,169 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-11 14:39:22,564 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-11 15:00:26,366 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:42]
+2023-09-11 15:57:25,201 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]
+2023-09-11 15:59:37,621 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]
+2023-09-12 08:16:13,485 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]
+2023-09-12 11:07:07,786 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]
+2023-09-12 11:07:33,003 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]
+2023-09-12 11:09:02,859 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]
+2023-09-12 11:09:25,946 ERROR: Exception on /user/abc [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\routes.py", line 98, in user
+    return render_template('user.html', user=user, posts=posts.item, form=form, next_url=next_url, prev_url=prev_url)
+                                                         ^^^^^^^^^^
+AttributeError: 'QueryPagination' object has no attribute 'item'
+2023-09-12 11:11:08,455 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]
+2023-09-12 11:11:10,950 ERROR: Exception on /user/abc [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\routes.py", line 99, in user
+    return render_template('user.html', user=user, posts=posts.item, form=form, next_url=next_url, prev_url=prev_url)
+                                                         ^^^^^^^^^^
+AttributeError: 'QueryPagination' object has no attribute 'item'
+2023-09-12 11:11:57,709 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]
+2023-09-12 11:11:59,247 ERROR: Exception on /user/abc [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\routes.py", line 98, in user
+    print(posts.item)
+          ^^^^^^^^^^
+AttributeError: 'QueryPagination' object has no attribute 'item'
+2023-09-12 11:12:28,185 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]
+2023-09-12 11:12:33,229 ERROR: Exception on /user/abc [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\routes.py", line 99, in user
+    return render_template('user.html', user=user, posts=posts.item, form=form, next_url=next_url, prev_url=prev_url)
+                                                         ^^^^^^^^^^
+AttributeError: 'QueryPagination' object has no attribute 'item'
+2023-09-12 11:13:02,018 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]

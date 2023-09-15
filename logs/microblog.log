@@ -1,0 +1,115 @@
+2023-09-14 12:31:01,716 ERROR: Exception on /search [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\main\routes.py", line 156, in search
+    posts, total = Post.search(g.search_form.q.data, page,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\models.py", line 15, in search
+    ids, total = query_index(cls.__tablename__, expression, page, per_page)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\search.py", line 22, in query_index
+    search = current_app.elasticsearch.search(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\elasticsearch\_sync\client\utils.py", line 414, in wrapped
+    return api(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\elasticsearch\_sync\client\__init__.py", line 3863, in search
+    return self.perform_request(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\elasticsearch\_sync\client\_base.py", line 320, in perform_request
+    raise HTTP_EXCEPTIONS.get(meta.status, ApiError)(
+elasticsearch.NotFoundError: NotFoundError(404, 'index_not_found_exception', 'no such index [post]', post, index_or_alias)
+2023-09-14 12:31:14,461 ERROR: Exception on /search [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\main\routes.py", line 156, in search
+    posts, total = Post.search(g.search_form.q.data, page,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\models.py", line 15, in search
+    ids, total = query_index(cls.__tablename__, expression, page, per_page)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\search.py", line 22, in query_index
+    search = current_app.elasticsearch.search(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\elasticsearch\_sync\client\utils.py", line 414, in wrapped
+    return api(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\elasticsearch\_sync\client\__init__.py", line 3863, in search
+    return self.perform_request(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\elasticsearch\_sync\client\_base.py", line 320, in perform_request
+    raise HTTP_EXCEPTIONS.get(meta.status, ApiError)(
+elasticsearch.NotFoundError: NotFoundError(404, 'index_not_found_exception', 'no such index [post]', post, index_or_alias)
+2023-09-14 12:33:38,333 ERROR: Exception on /search [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\main\routes.py", line 156, in search
+    posts, total = Post.search(g.search_form.q.data, page,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\models.py", line 15, in search
+    ids, total = query_index(cls.__tablename__, expression, page, per_page)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\search.py", line 22, in query_index
+    search = current_app.elasticsearch.search(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\elasticsearch\_sync\client\utils.py", line 414, in wrapped
+    return api(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\elasticsearch\_sync\client\__init__.py", line 3863, in search
+    return self.perform_request(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\elasticsearch\_sync\client\_base.py", line 320, in perform_request
+    raise HTTP_EXCEPTIONS.get(meta.status, ApiError)(
+elasticsearch.NotFoundError: NotFoundError(404, 'index_not_found_exception', 'no such index [post]', post, index_or_alias)
+2023-09-14 12:33:57,614 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:77]
+2023-09-14 12:36:39,111 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:77]
+2023-09-14 12:38:40,090 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:77]
+2023-09-14 15:07:33,472 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:77]
+2023-09-14 15:50:54,800 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:77]
+2023-09-15 09:21:22,770 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:77]
+2023-09-15 09:24:26,710 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:77]
+2023-09-15 09:25:56,930 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:77]
+2023-09-15 10:08:22,409 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:77]
+2023-09-15 10:08:33,483 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:77]
