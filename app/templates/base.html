@@ -39,10 +39,7 @@
                     <a href="{{ url_for('main.messages') }}">{{ _('Messages') }}
                         {% set new_messages = current_user.new_messages() %}
                         <span id="message_count" class="badge"
-                              style="visibility: {% if new_messages %}
-                              visible,
-                                                {% else %}hidden,
-                                                {% endif %};">
+                              style="visibility: visible">
                             {{ new_messages }}
                         </span>
                     </a>
@@ -92,7 +89,7 @@
 {{ moment.lang(g.locale) }}
 <script>
     function translate(sourceElem, destElem, sourceLang, destLang) {
-        $(destElem).html('<img src="{{ url_for('static', filename='loading.gif') }}">');
+        $(destElem).html('<img src="{{ url_for("static", filename="loading.gif") }}">');
         $.post('/translate', {
             text: $(sourceElem).text(),
             source_language: sourceLang,
@@ -152,11 +149,14 @@
     function set_task_progress(task_id, progress) {
         $('#' + task_id + '-progress').text(progress);
     }
-    {% if current_user.is_authenticated %}
+</script>
+{% endblock %}
+{% if current_user.is_authenticated %}
+<script>
     $(function() {
         var since = 0;
         setInterval(function() {
-            $.ajax('{{ url_for('main.notifications') }}?since=' + since).done(
+            $.ajax('{{ url_for("main.notifications") }}?since=' + since).done(
                 function(notifications) {
                     for (var i = 0; i < notifications.length; i++) {
                         if (notifications[i].name == 'unread_message_count')
@@ -176,6 +176,5 @@
             );
         }, 10000);
     });
-    {% endif %}
 </script>
-{% endblock %}
+{% endif %}
