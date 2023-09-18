@@ -1,73 +1,4 @@
-2023-09-12 11:15:50,480 ERROR: Exception on /user/abc [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
-Traceback (most recent call last):
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\app\routes.py", line 98, in user
-    return render_template('user.html', user=user, posts=posts.body, form=form, next_url=next_url, prev_url=prev_url)
-                                                         ^^^^^^^^^^
-AttributeError: 'QueryPagination' object has no attribute 'body'
-2023-09-12 11:15:52,819 ERROR: Exception on /user/abc [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
-Traceback (most recent call last):
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\app\routes.py", line 98, in user
-    return render_template('user.html', user=user, posts=posts.body, form=form, next_url=next_url, prev_url=prev_url)
-                                                         ^^^^^^^^^^
-AttributeError: 'QueryPagination' object has no attribute 'body'
-2023-09-12 11:18:51,566 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]
-2023-09-12 11:18:56,147 ERROR: Exception on /user/abc [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
-Traceback (most recent call last):
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\Documents\microblog\app\routes.py", line 99, in user
-    print(json.loads(posts))
-          ^^^^^^^^^^^^^^^^^
-  File "C:\Users\AndreuSadurní\miniconda3\Lib\json\__init__.py", line 339, in loads
-    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
-TypeError: the JSON object must be str, bytes or bytearray, not QueryPagination
-2023-09-12 11:20:38,562 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:43]
-2023-09-12 11:28:24,601 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:44]
-2023-09-12 12:20:41,979 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:44]
-2023-09-12 12:20:52,374 ERROR: Exception on /reset_password_request [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
+2023-09-12 12:21:04,547 ERROR: Exception on /reset_password_request [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
 Traceback (most recent call last):
   File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
     response = self.full_dispatch_request()
@@ -105,3 +36,88 @@ Traceback (most recent call last):
   File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\templating.py", line 98, in _get_source_fast
     raise TemplateNotFound(template)
 jinja2.exceptions.TemplateNotFound: reset_password_resquest.html
+2023-09-12 13:13:23,688 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:46]
+2023-09-13 08:28:24,416 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:52]
+2023-09-13 09:01:52,025 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:52]
+2023-09-13 09:48:29,539 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:52]
+2023-09-13 14:31:20,107 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:74]
+2023-09-13 15:42:13,614 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:74]
+2023-09-14 11:07:17,860 INFO: Microblog startup [in C:\Users\AndreuSadurní\Documents\microblog\app\__init__.py:77]
+2023-09-14 11:07:20,923 ERROR: Exception on /index [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\main\routes.py", line 18, in before_request
+    db.session.commit()
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 554, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1923, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1239, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1202, in _prepare_impl
+    self.session.dispatch.before_commit(self.session)
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\event\attr.py", line 378, in __call__
+    fn(*args, **kw)
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\models.py", line 30, in before_commit
+    'delete': list(session.delete)
+              ^^^^^^^^^^^^^^^^^^^^
+TypeError: 'method' object is not iterable
+2023-09-14 11:07:24,149 ERROR: Exception on /index [GET] [in C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\flask\app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\main\routes.py", line 18, in before_request
+    db.session.commit()
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 554, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1923, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1239, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1202, in _prepare_impl
+    self.session.dispatch.before_commit(self.session)
+  File "C:\Users\AndreuSadurní\Documents\microblog\venv\Lib\site-packages\sqlalchemy\event\attr.py", line 378, in __call__
+    fn(*args, **kw)
+  File "C:\Users\AndreuSadurní\Documents\microblog\app\models.py", line 30, in before_commit
+    'delete': list(session.delete)
+              ^^^^^^^^^^^^^^^^^^^^
+TypeError: 'method' object is not iterable
